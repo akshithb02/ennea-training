@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.*;
 
-public class HashSetdTest {
+public class HashSetDemoTest {
 
     @Test
     public void testAddElements() {
@@ -41,4 +41,8 @@ public class HashSetdTest {
         set.add("orange");
 
         assertTrue(set.contains("apple"));
-        as
+        assertTrue(set.contains("banana"));
+        assertTrue(set.contains("orange"));
+        assertFalse(set.contains("grape"));
+    }
+}
