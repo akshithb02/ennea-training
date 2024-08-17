@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.*;
 
-public class HashSetDemoTest {
+public class hashsetdTest {
 
     @Test
     public void testAddElements() {
