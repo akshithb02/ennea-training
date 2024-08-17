@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Search Pokemon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: rgb(255, 221, 1);">
     <header>
         <div id="img">
-            <img src="Pokemon-Symbol a1.jpg" alt="Logo" style="width: 100px; height: auto;">
+            <img src="Pokemon-Symbol a1.jpg" alt="L   ogo" style="width: 100px; height: auto;">
         </div>
         <div id="buttons">
             <a href="index.html" id="home" style="text-decoration: none;">
@@ -23,14 +23,18 @@
             </a>
         </div>
     </header>
-    <main >
-        <h1>Assignment-1 </h1>
-        <section id="data" style="text-align: center;">
-            <h2>collecting data from pokeAPI with async function </h2>
-            <button id="fetchData">Fetch Pokemon Data</button>
+    <main style="text-align: center; background-color: rgb(255, 221, 1); color: rgb(4, 4, 240); ">
+        <h1 style="">Search for a Pokemon</h1>
+        <form id="searchForm">
+            <label for="pokemonName">Enter Pokemon Name:</label>
+            <input type="text" id="pokemonName" placeholder="Enter pokemon name" style="  height: 30px;" required>
+            <button type="submit" style="border-radius: 5px;color:  rgb(255, 221, 1); background-color: black; height: 30px; padding: 5px;">Search</button>
+        </form>
+        <div id="pokemonInfo">
+            <h2>Pokemon Information</h2>
             <div id="dataContainer"></div>
-        </section>
+        </div>
     </main>
-    <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
